@@ -20,8 +20,15 @@ const people = [
 // Use Math.round()
 
 function avgAge(peopleArr) {
+  let total = peopleArr.reduce(
+    (allPerson, person) => allPerson + person.age,
+    0
+  );
+  return Math.round(total / peopleArr.length);
+
   // return something
 }
+
 
 // 2. Do a console.log to verify your function.
 

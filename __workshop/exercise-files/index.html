@@ -1,14 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Signup Form</title>
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Signup Form</h1>
+      <form action="">
+        <div class="full-name">
+          <label for="full-name">Full name</label>
+          <input
+            type="text"
+            name="Full-name"
+            id="full-name"
+            value=""
+            required
+          />
+        </div>
+        <div class="street">
+          <label for="street">Street address</label>
+          <input type="text" name="street" id="street" value="" required />
+        </div>
+        <div class="email">
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" value="" required />
+        </div>
+        <div class="phone">
+          <label for="phone">Phone number</label>
+          <input type="text" name="phone" id="phone" value="" required />
+        </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            value=""
+            required
+          />
+        </div>
+        <div class="confirm">
+          <label for="confirm">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm"
+            id="confirm"
+            value=""
+            required
+          />
+        </div>
+
+        <footer>
+          <div class="terms">
+            <input type="checkbox" name="terms" id="terms" value="" required />
+            <label for="terms"
+              >I agree to the <a href="#">terms of service.</a></label
+            >
+            <div id="error"></div>
+          </div>
+
+          <div class="buttons">
+            <button class="clear">Clear</button>
+            <button type="submit" class="submit">Submit</button>
+          </div>
+        </footer>
+      </form>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
